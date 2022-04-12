@@ -1,0 +1,195 @@
+@charset "UTF-8";
+/* *********************초기화****************** */
+/* 여백초기화 */
+ body, div, ul, li, dl, dt, ol, h1,
+ h2, h3, h4, h5, h6, input, fieldset,
+  legend, p, select, table, th, td, tr,
+   textarea, button, form {margin: 0; padding:0;}
+
+
+/* 리스트 초기화 */
+ul, ol {list-style-type: none;}
+
+/* 링크 초기화 */
+a:link {color: #000000; text-decoration: none;}
+a:visited {color: #000000; text-decoration: none;}
+a:hover {color: #000000; text-decoration: none;}
+a:active {color: #000000; text-decoration: none;}
+
+
+/* clearfix */
+.clearfix{*zoom:1;}
+.clearfix:before, .clearfix:after {display: block; content: ""; line-height: 0;}
+.clearfix:after {clear: both;}
+
+
+
+/* ****************************레이아웃************************ */
+#wrap {
+	margin: 0px auto;
+	width: 1000px;
+		}
+
+#wrap > #header {
+	/* background-color:  #0000ff; */
+	border-bottom: 1px solid #bfbfbf;
+	padding: 10px 0px 10px 0px;
+		}
+#wrap > #nav {
+	/* background-color: #00ff00; */
+	border-bottom: 1px solid #bfbfbf;
+	padding: 10px 0px 10px 0px;
+		}
+
+#wrap > #contents {
+	/* background-color: #ff00ff; */
+	border-bottom: 1px solid #bfbfbf;
+	padding: 40px 0px 40px 0px;
+		}
+
+#wrap > #footer {
+	background-color: #dddddd;
+	padding: 20px;
+	text-align: center;
+	font-size: 10px;
+		}
+
+
+
+
+
+
+
+/* ******************헤더(로고  로그인, 회원가입)***************** */
+#header > h1 {
+	color: #79b30b;
+	font-size: 35px;
+	float: left;
+	font-weight: bold;
+	/* border: 1px solid #000000; */
+	}			
+		
+#header ul {
+	margin: 15px 0px 0px 0px;
+	/* border: 1px solid #000000; */
+	float: right;
+	}
+	
+#header li {
+	margin: 0px 0px 0px 20px;
+	float: left;
+	font-size: 14px;
+	/* border: 1px solid #000000; */
+		}	
+
+
+		
+/* **************************nav*************************** */
+#nav {
+	font-size: 17px;
+	font-weight: bold;
+		}
+
+#nav ol{
+	margin: 10px 75px 10px 75px;
+		}
+
+#nav>ol>li {
+	text-align: center;
+	padding: 10px 75px 10px 75px;
+	float: left;
+		}
+
+
+/* ********************contents>aside********************** */
+#aside {
+	float: left;
+	margin: 0px 30px;
+}
+
+#aside p {
+	text-align: center;
+	font-weight: bold;
+	font-size: 20px;
+	margin: 1px;
+	padding: 20px 50px;
+	border: 1px solid #000000;
+	background-color: #dddddd;
+		}
+		
+#aside>ol>li {
+	margin: 1px;
+	padding: 10px;
+	font-size: 18px;
+	border: 1px solid #000000;
+		}
+
+
+
+
+/* ********************contents>main********************** */
+#main {
+	float: right;
+	padding: 0px 30px;}
+
+#main1 {
+	border-bottom: 1px solid #bfbfbf;
+	padding: 0px 0px 10px 0px;
+		}
+
+#main1 > h2 {
+	font-size: 24px;
+	float: left;
+	font-weight: bold;
+	/* border: 1px solid #000000; */
+	}			
+		
+#main1 ol {
+	margin: 15px 0px 0px 0px;
+	/* border: 1px solid #000000; */
+	float: right;
+	}
+#main1 ol li.last:after {padding: 0px 5px; content: ">";}
+	
+#main1 li {
+	float: left;
+	font-size: 14px;
+	/* border: 1px solid #000000; */
+		}	
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+#main2 #search ul {float: right; margin: 10px 0px;}
+#main2 li {float:left; margin: 0px 1px;}
+
+
+#main2 table {
+	border-collapse: collapse;
+	border-top: 1px solid #000000;
+	border-bottom: 1px solid #000000;
+	text-align: center;
+		}
+#main2 table tr {height: 40px;}		
+#main2 table>thead{
+	background-color: #dddddd;
+	border-bottom: 1px solid #bbbbbb;
+		}
+table>tbody .line {border-bottom: 1px solid #bbbbbb;}
+
+
+#pagenumber button {float: right; margin: -10px 0px;}
+#main2 #pagenumber ul{
+	padding: 10px 200px;
+	text-align: center;
+				}
+
+#pagenumber a {padding: 0px 5px;}
+
+#pagenumber a:link{text-decoration: none;}
+#pagenumber a:visited{text-decoration: none;}
+#pagenumber a:hover{color: #79b30b; font-weight: bold; text-decoration: none;}
+#pagenumber a:active{text-decoration: none;}
+
+
+
+
+
