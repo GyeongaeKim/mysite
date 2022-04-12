@@ -2,10 +2,6 @@
 /* #contents>div {border: 1px solid #000000;} */
 .form-group {padding: 0px 0px 10px 0px;}
 
-
-
-
-
 /* *************************main-content-header***************** */
 #main-content-header>ol {
 	float: right;
@@ -16,44 +12,52 @@
 #main-content-header>ol>li:after {padding: 0px 10px; content: ">"}
 #main-content-header>ol>li.last:after {padding: 0px; content: ""}
 
+/* 게시판 공통 */
+#main-content-body {padding: 30px 0px 20px 0px; border-bottom: 1px solid #bfbfbf;}
+#main-content-signup {padding: 30px 0px 20px 0px;}
+#main-content-footer {padding: 20px 0px 20px 0px; text-align: center;}
 
 /* *********************main-content-board********************* */
+/* 리스트************************************************ */
 #search-button {float: right; padding: 25px 0px 15px 0px; }
-#search-button>input {width: 180px; height: 30px;}
+#search-button>input {width: 160px; height: 20px;}
 #search-button>button {width: 60px; height: 35px; background-color: #dddddd;}
 
-
-
-
-
-/* 게시판 공통 */
-#main-content-body {
-	padding: 30px 0px 20px 0px;
-	border-bottom: 1px solid #bfbfbf;
-		}
-
-#main-content-footer {
-	padding: 20px 0px 20px 0px;
+#table table {
+	width: 800px;
+	border-collapse: collapse;
+	border-top: 1px solid #000000;
+	border-bottom: 1px solid #000000;
 	text-align: center;
-			}
-
-
-
-
-
-
-
-/* 리스트 */
-/* 글쓰기폼 */
-#main-content-body .form-title {
-	display: inline-block;
-	width: 80px;
 		}
+#table table tr {height: 40px;}		
+#table table>thead{
+	background-color: #dddddd;
+	border-bottom: 1px solid #bbbbbb;
+		}
+table>tbody .line {border-bottom: 1px solid #bbbbbb;}
+
+#pagenumber {text-align: center;  padding: 20px 0px;}
+#pagenumber ul {display: inline-block;}
+#pagenumber ul li {float: left;}	
+#pagenumber button {float: right;}
+
+#pagenumber a {padding: 0px 5px;}
+#pagenumber a:link{text-decoration: none;}
+#pagenumber a:visited{text-decoration: none;}
+#pagenumber a:hover{color: #79b30b; font-weight: bold; text-decoration: none;}
+#pagenumber a:active{text-decoration: none;}
+
+
+
+/* 글쓰기폼********************************************** */
+#main-content-body .form-title {display: inline-block; width: 80px;}
 
 #main-content-body #sel-board {width: 162px;}
 #main-content-body #txt-title {width: 710px; /* 722px; */}
 #main-content-body #txt-password {width: 150px;}
 #main-content-body #txt-content {width: 800px; height: 200px;}
+
 
 /*
 #txt-title {padding: 6px 3px 6px 6px;}
@@ -62,8 +66,8 @@
 
 input[type="text"] {padding: 6px 3px 6px 6px;}
 input[type="password"] {padding: 6px 3px 6px 6px;}
-input[type="radio"] {width: 15px; height: 15px; margin: 0px 20px 0px 0px;}
-input[type="checkbox"] {width: 15px; height: 15px; margin: 0px 20px 0px 0px;}
+input[type="radio"] {width: 15px; height: 15px; margin: 0px 20px 0px 3px; vertical-align: middle;}
+input[type="checkbox"] {width: 15px; height: 15px; margin: 0px 20px 0px 3px; vertical-align: middle;}
 input[type="file"] {cursor: pointer;}
 
 select {padding: 6px 3px 6px 3px; /* height: 25px; */}
@@ -80,6 +84,17 @@ textarea {
 	cursor: pointer;
 		}
 
+/* 회원가입********************************************** */
+#main-content-signup .form-title {display: inline-block; width: 80px;}
+.signupboard .form-group {padding: 10px 0px 10px 0px; border-bottom: 1px solid #bfbfbf;}
+
+#addresstitle {vertical-align: top;}
+#address {float: none; display: inline-block;}
+#txt-zipcode {margin: 0px 0px 5px 0px;}
+#txt-address {width: 500px;}
+
+#selftitle {vertical-align: top;}
+#main-content-signup #selfcontent {width: 500px; height: 200px;}
 
 
 
